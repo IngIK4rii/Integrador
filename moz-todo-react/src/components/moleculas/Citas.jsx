@@ -1,47 +1,61 @@
 import React from 'react';
-import './Citas.css';
+import './Citas.css'; // Asegúrate de que el archivo CSS está en la misma carpeta
 
 const CitaForm = () => {
   return (
     <div className="form-container">
-      <h2>Programa una Cita</h2>
+      <h2>Formulario de Registro</h2>
       <div className="form-section">
         <h3>Sobre el paciente</h3>
         <div className="form-grid">
           <div className="form-group">
-            <label>Nombre</label>
-            <input type="text" placeholder="Ingresa tu nombre" />
+            <label htmlFor="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Ingresa tu nombre" />
           </div>
           <div className="form-group">
-            <label>Apellido Paterno</label>
-            <input type="text" placeholder="Ingresa tu apellido paterno" />
+            <label htmlFor="apellido-paterno">Apellido Paterno</label>
+            <input type="text" id="apellido-paterno" placeholder="Ingresa tu apellido paterno" />
           </div>
           <div className="form-group">
-            <label>Apellido Materno</label>
-            <input type="text" placeholder="Ingresa tu apellido materno" />
+            <label htmlFor="apellido-materno">Apellido Materno</label>
+            <input type="text" id="apellido-materno" placeholder="Ingresa tu apellido materno" />
           </div>
           <div className="form-group">
-            <label>Fecha de nacimiento</label>
-            <input type="date" />
+            <label htmlFor="fecha-nacimiento">Fecha de nacimiento</label>
+            <input type="date" id="fecha-nacimiento" />
           </div>
           <div className="form-group">
-            <label>Género</label>
-            <select>
+            <label htmlFor="genero">Género</label>
+            <select id="genero">
               <option value="masculino">Masculino</option>
               <option value="femenino">Femenino</option>
             </select>
           </div>
           <div className="form-group">
-            <label>Teléfono</label>
-            <input type="tel" placeholder="+52 (987) 123 45 67" />
+            <label htmlFor="telefono">Teléfono</label>
+            <input type="tel" id="telefono" placeholder="+52 (967) 123 45 67" />
           </div>
           <div className="form-group form-group-full">
-            <label>Dirección</label>
-            <input type="text" placeholder="Calle" />
+            <label htmlFor="direccion">Dirección</label>
+            <input type="text" id="direccion" placeholder="Calle" />
+          </div>
+          <div className="form-group form-group-full">
+            <label htmlFor="colonia">Colonia</label>
+            <select id='colonia'></select>
+            
+          </div>
+          <div className="form-group form-group-full">
+            <label htmlFor="barrio">Clave Postal</label>
+            <input type="text" id="barrio" placeholder="Ingresa tu clave postal" />
+          </div>
+          <div className="form-group form-group-full">
+            <label htmlFor="numero-calle">Número de Calle</label>
+            <input type="text" id="numero-calle" placeholder="Ingresa tu número de calle" />
           </div>
         </div>
       </div>
-     {/*Parte de tiempo y analisis*/ }
+
+      {/*Parte de tiempo y analisis*/ }
      <div className="form-sections">
         <div className="date-time-group">
           <h3>Elige tu tiempo</h3>
@@ -77,10 +91,13 @@ const CitaForm = () => {
           </div>
         </div>
       </div>
-      <button>Agendar</button>
-    </div>
+      <button className="left-align-button">Agendar</button>
+
+    </div>  
+    
   );
-};
+}
 
 export default CitaForm;
+
 

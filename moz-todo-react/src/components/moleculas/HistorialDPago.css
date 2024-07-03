@@ -1,0 +1,44 @@
+
+
+.resultados-container {
+    width: 100%;
+    background-color: azure;
+    padding: 40px 30px;
+    font-family: Arial, sans-serif;
+}
+  
+h2{
+    color: black;
+    text-align: left;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+th, td {
+    border: 1px solid #020202;
+    color: black;
+    text-align: left;
+    padding: 8px;
+}
+  
+th {
+    background-color: #f2f2f2;
+    color: black;
+}
+  
+.acciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.acciones .img {
+    cursor: pointer;
+    margin-left: 10px;
+    width: 24px; /* Ajustar según sea necesario */
+    height: 24px; /* Ajustar según sea necesario */
+}
+  

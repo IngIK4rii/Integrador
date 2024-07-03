@@ -29,10 +29,15 @@ const AgregarAnalisis = () =>{
             <input type="text"placeholder="Ingrese la clave de estudios"required></input>
         </div>
 
-        <div class="button-container">
-            <button type="button">Agregar</button>
-            <button type="button">Cancelar</button>
+        
+         <div className="button-one">
+               <button type="button">Agregar</button> 
+         </div>
+         <div className="button-two">
+              <button type="button">Cancelar</button>  
         </div>
+            
+        
      </div>
     </div>
 </div>
